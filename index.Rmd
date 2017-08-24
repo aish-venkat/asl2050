@@ -214,9 +214,11 @@ Lang, John, et al. [Random Spatial Networks: Small Worlds without Clustering, Tr
 * Raster stack manipulation and raster PCA
 * Random forest models and boosted regression trees
 
----
+---&twocolfull
 
-## Acknowledgements
+## Acknowledgements   
+
+*** =left
 
 * Noam Ross
 
@@ -230,3 +232,13 @@ Lang, John, et al. [Random Spatial Networks: Small Worlds without Clustering, Tr
 
 <center><img src="assets/img/EHA_logo_wide.jpg" height="200"></center>
 
+*** =right
+
+* Orsolya Mikecz
+
+* Antonio Mele
+
+* Ugo Pica-Ciamarra
+
+<br><br><br><br>
+<center><img src="assets/img/faologo.jpg" height="150"></center>
