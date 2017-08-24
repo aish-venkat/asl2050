@@ -45,15 +45,65 @@ assets      : {assets: ../../assets}
   - identify opportunities and threats associated with the long-term development of livestock
   - agree upon priority reforms and investments, and the capacity needed for their implementation, to ensure sustainable development of the livestock sector in the next three or four decades.
 * Countries:  Burkina Faso, Egypt, Ethiopia, Kenya, Nigeria and Uganda
-  
-* EHA work:
-  - Metaflu ([Hosseini et al, 2013](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0080091)) package to simulate dynamics of avian influenza spread
-  - Kate's work: variable farm sizes, culling
+
+---
+
+## EHA & ASL 2050
+
+- Metaflu ([Hosseini et al, 2013](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0080091)) package to simulate propagation and impacts of seeded avian influenza outbreaks
+  - Kate: variable farm sizes, growth, culling
+  - John: presence/absence of markets, effect on households and farms
+  - Me: spatial data collection, developing pipeline for 'real world' data input into Metaflu 
+
+<center><img src="assets/img/metaflu.jpg" height="600"></center>
+
+---
+
+## Key Actors
+
+Households
+ * Key exposure points for humans
+ * 60-80% of livestock sector in ASL countries is driven by household/backyard poultry farming
+ * Easy targets for interventions and incentives
+
+Commercial Farms
+ * Operations of scale
+ * Most impacted by HPAI outbreaks
+ * Most ASL2050 countries aim to expand commercial poultry operations in next decade-incentive for improved biosecurity
+
+Markets
+ * Daily, weekly markets frequented by majority of people
+ * Locations of high chicken movement between actors
+
+---&twocolfull
+
+## Knowns & Unknowns
+
+*** =left
+
+### Unknowns
+
+* Locations of farms & households
+* Flock size at farms & households
+* Flock size at markets
+<br></br>
+<center><img src="assets/img/locationquestion.png" width="300"></center>
+
+*** =right
+
+### Knowns
+
+* Representative areas <br>
+  <i>Source: livestock surveys</i>
+* Household weights <br>
+  <i>Source: livestock surveys</i>
+* Commercial farm size information <br>
+  <i>Source: literature</i>
+* Network of farms and households contributing to markets
 
 ---
 
 ## Small World Networks
-
 
 <center><img src="assets/img/WS_SmallWorld.gif" width="1000"></center>
 
@@ -62,7 +112,22 @@ Watts, Duncan J., and Steven H. Strogatz. [Collective dynamics of 'small-world' 
 
 --- 
 
-## Random Spatial Networks
+## Goals & Methods
+
+> 1. Ground Metaflu simulations in reality 
+  - Country-wide poultry sector information collection
+  - Spatial data processing 
+
+> 2. Apply Small World Network principles to Random Spatial Networks
+  - Probability surface development and spatial sampling for households and farms
+  - Assigning 'farm size' based on extensive/intensive production rasters for households and commercial farms
+
+> 3. Identify limitations of existing data, and generate models and questions to share with FAO theme leaders
+
+
+---
+
+## Livestock Survey Data
 
 * Primary data source: Country-level Livestock Survey data aggregated by FAO
 
@@ -74,10 +139,9 @@ Watts, Duncan J., and Steven H. Strogatz. [Collective dynamics of 'small-world' 
 ## 3 84926 1391416   15.392    39.212             3230        4
 ```
 
-My tasks:
-  - Ground Metaflu simulations in reality through country-wide poultry sector information
-  - Apply Small World Network principles to Random Spatial Networks
-  - Identify limitations of existing data, and generate models and questions to share with FAO theme leaders
+* Surveys provide approximate location information
+
+* Representative households are actually spread out across survey enumeration areas
 
 --- 
 
@@ -97,7 +161,7 @@ My tasks:
 
 >   * Fit lognormal model to farm size, sample randomly from distribution until value adds up to total estimated intensive chicken population
 
-<center><img src="assets/img/lognorm.png" width="600"></center>
+<center><img src="assets/img/lognorm.jpg"></center>
 
 ---
 
@@ -215,9 +279,11 @@ Lang, John, et al. [Random Spatial Networks: Small Worlds without Clustering, Tr
 * Raster stack manipulation and raster PCA
 * Random forest models and boosted regression trees
 
----
+---&twocolfull
 
-## Acknowledgements
+## Acknowledgements   
+
+*** =left
 
 * Noam Ross
 
@@ -231,3 +297,13 @@ Lang, John, et al. [Random Spatial Networks: Small Worlds without Clustering, Tr
 
 <center><img src="assets/img/EHA_logo_wide.jpg" height="200"></center>
 
+*** =right
+
+* Orsolya Mikecz
+
+* Antonio Mele
+
+* Ugo Pica-Ciamarra
+
+<br><br><br><br>
+<center><img src="assets/img/faologo.jpg" height="150"></center>

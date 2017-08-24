@@ -73,17 +73,85 @@
 <li>identify opportunities and threats associated with the long-term development of livestock</li>
 <li>agree upon priority reforms and investments, and the capacity needed for their implementation, to ensure sustainable development of the livestock sector in the next three or four decades.</li>
 </ul></li>
-<li><p>Countries:  Burkina Faso, Egypt, Ethiopia, Kenya, Nigeria and Uganda</p></li>
-<li><p>EHA work:</p>
-
-<ul>
-<li>Metaflu (<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0080091">Hosseini et al, 2013</a>) package to simulate dynamics of avian influenza spread</li>
-<li>Kate&#39;s work: variable farm sizes, culling</li>
-</ul></li>
+<li>Countries:  Burkina Faso, Egypt, Ethiopia, Kenya, Nigeria and Uganda</li>
 </ul>
 
 </section>
 <section class="slide " id="slide-5">
+  <h2>EHA &amp; ASL 2050</h2>
+  <ul>
+<li>Metaflu (<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0080091">Hosseini et al, 2013</a>) package to simulate propagation and impacts of seeded avian influenza outbreaks
+
+<ul>
+<li>Kate: variable farm sizes, growth, culling</li>
+<li>John: presence/absence of markets, effect on households and farms</li>
+<li>Me: spatial data collection, developing pipeline for &#39;real world&#39; data input into Metaflu </li>
+</ul></li>
+</ul>
+
+<p><center><img src="assets/img/metaflu.jpg" height="600"></center></p>
+
+</section>
+<section class="slide " id="slide-6">
+  <h2>Key Actors</h2>
+  <p>Households</p>
+
+<ul>
+<li>Key exposure points for humans</li>
+<li>60-80% of livestock sector in ASL countries is driven by household/backyard poultry farming</li>
+<li>Easy targets for interventions and incentives</li>
+</ul>
+
+<p>Commercial Farms</p>
+
+<ul>
+<li>Operations of scale</li>
+<li>Most impacted by HPAI outbreaks</li>
+<li>Most ASL2050 countries aim to expand commercial poultry operations in next decade-incentive for improved biosecurity</li>
+</ul>
+
+<p>Markets</p>
+
+<ul>
+<li>Daily, weekly markets frequented by majority of people</li>
+<li>Locations of high chicken movement between actors</li>
+</ul>
+
+</section>
+<section class="slide " id="slide-7">
+  <h2>Knowns &amp; Unknowns</h2>
+  
+<div style='float:left;width:48%;' class='centered'>
+  <h3>Unknowns</h3>
+
+<ul>
+<li>Locations of farms &amp; households</li>
+<li>Flock size at farms &amp; households</li>
+<li>Flock size at markets
+<br></br>
+<center><img src="assets/img/locationquestion.png" width="300"></center></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <h3>Knowns</h3>
+
+<ul>
+<li>Representative areas <br>
+<i>Source: livestock surveys</i></li>
+<li>Household weights <br>
+<i>Source: livestock surveys</i></li>
+<li>Commercial farm size information <br>
+<i>Source: literature</i></li>
+<li>Network of farms and households contributing to markets</li>
+</ul>
+
+</div>
+<div>
+  
+</div>
+</section>
+<section class="slide " id="slide-8">
   <h2>Small World Networks</h2>
   <p><center><img src="assets/img/WS_SmallWorld.gif" width="1000"></center></p>
 
@@ -91,8 +159,27 @@
 Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature/journal/v393/n6684/full/393440a0.html">Collective dynamics of &#39;small-world&#39; networks</a>, Nature 393.6684 (1998): 440</p>
 
 </section>
-<section class="slide " id="slide-6">
-  <h2>Random Spatial Networks</h2>
+<section class="slide " id="slide-9">
+  <h2>Goals &amp; Methods</h2>
+  <ol class = "build incremental">
+<li><p>Ground Metaflu simulations in reality </p>
+
+<ul>
+<li>Country-wide poultry sector information collection</li>
+<li>Spatial data processing </li>
+</ul></li>
+<li><p>Apply Small World Network principles to Random Spatial Networks</p>
+
+<ul>
+<li>Probability surface development and spatial sampling for households and farms</li>
+<li>Assigning &#39;farm size&#39; based on extensive/intensive production rasters for households and commercial farms</li>
+</ul></li>
+<li><p>Identify limitations of existing data, and generate models and questions to share with FAO theme leaders</p></li>
+</ol>
+
+</section>
+<section class="slide " id="slide-10">
+  <h2>Livestock Survey Data</h2>
   <ul>
 <li>Primary data source: Country-level Livestock Survey data aggregated by FAO</li>
 </ul>
@@ -103,16 +190,13 @@ Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature
 ## 3 84926 1391416   15.392    39.212             3230        4
 </code></pre>
 
-<p>My tasks:</p>
-
 <ul>
-<li>Ground Metaflu simulations in reality through country-wide poultry sector information</li>
-<li>Apply Small World Network principles to Random Spatial Networks</li>
-<li>Identify limitations of existing data, and generate models and questions to share with FAO theme leaders</li>
+<li><p>Surveys provide approximate location information</p></li>
+<li><p>Representative households are actually spread out across survey enumeration areas</p></li>
 </ul>
 
 </section>
-<section class="slide " id="slide-7">
+<section class="slide " id="slide-11">
   <h2>Approach: Households</h2>
   <ul class = "build incremental">
 <li>Household/Backyard chicken production density from <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133381#sec002">Marius et al, 2015</a></li>
@@ -125,17 +209,17 @@ Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature
 </ul>
 
 </section>
-<section class="slide " id="slide-8">
+<section class="slide " id="slide-12">
   <h2>Aproach: Commercial Farms</h2>
   <ul class = "build incremental">
 <li><p>Get number and sizes of commercial farms from literature, poultry sector reports (Ethiopia, Kenya, Uganda), or scraped from <a href="http://www.oie.int/wahis_2/public/wahid.php/Wahidhome/Home">OIE</a> &amp; <a href="http://empres-i.fao.org/eipws3g/">FAO EMPRES-I</a> outbreak data</p></li>
 <li><p>Fit lognormal model to farm size, sample randomly from distribution until value adds up to total estimated intensive chicken population</p></li>
 </ul>
 
-<p><center><img src="assets/img/lognorm.png" width="600"></center></p>
+<p><center><img src="assets/img/lognorm.jpg"></center></p>
 
 </section>
-<section class="slide " id="slide-9">
+<section class="slide " id="slide-13">
   <h2>Aproach: Commercial Farms</h2>
   <ul class = "build incremental">
 <li>Distribute points based on intensive poultry production raster</li>
@@ -144,7 +228,7 @@ Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature
 <p><center><img src="assets/img/int_rast.png" width="600"></center></p>
 
 </section>
-<section class="slide " id="slide-10">
+<section class="slide " id="slide-14">
   <h2>Approach: Markets</h2>
   <ul class = "build incremental">
 <li><p>Ethiopia, Uganda, Kenya: <a href="www.igad.int">Intergovernmental Authority on Development (IGAD)</a> </p></li>
@@ -154,14 +238,14 @@ Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature
 <p><center><img src="assets/img/ETH_markets.png" width="600"></center></p>
 
 </section>
-<section class="slide " id="slide-11">
+<section class="slide " id="slide-15">
   <h2>Combining Data</h2>
   <p><br></p>
 
 <p><center><img src="assets/img/ETH_points.png" width="1000"></center></p>
 
 </section>
-<section class="slide " id="slide-12">
+<section class="slide " id="slide-16">
   <h2>Parametrize connectivity</h2>
   <p><br></p>
 
@@ -170,7 +254,7 @@ Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature
 <p><center>Each household is connected to nearest market</center></p>
 
 </section>
-<section class="slide " id="slide-13">
+<section class="slide " id="slide-17">
   <h2>Parametrize connectivity</h2>
   <p><br></p>
 
@@ -179,7 +263,7 @@ Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature
 <p><center>Each farm is connected to multiple markets</center></p>
 
 </section>
-<section class="slide " id="slide-14">
+<section class="slide " id="slide-18">
   <h2>Parametrize connectivity: households</h2>
   <p><br></p>
 
@@ -188,7 +272,7 @@ Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature
 <p><center>Each household is connected to two other households</center></p>
 
 </section>
-<section class="slide " id="slide-15">
+<section class="slide " id="slide-19">
   <h2>Parametrize connectivity: households</h2>
   <p><br></p>
 
@@ -197,7 +281,7 @@ Watts, Duncan J., and Steven H. Strogatz. <a href="https://www.nature.com/nature
 <p><center>Each household is connected to four other households</center></p>
 
 </section>
-<section class="slide " id="slide-16">
+<section class="slide " id="slide-20">
   <h2>Connecting poultry sector actors</h2>
   <p><br>
 \[p_{u,v} = min\Bigg(\kappa_u\kappa_v\frac{f(d_{uv})}{\rho\langle\kappa\rangle},1\Bigg)\]</p>
@@ -219,7 +303,7 @@ $\rho = $ density of nodes within country
 <p>Lang, John, et al. <a href="https://arxiv.org/pdf/1702.01252.pdf">Random Spatial Networks: Small Worlds without Clustering, Traveling Waves, and Hop-and-Spread Disease Dynamics</a>. arXiv:1702.01252 (2017).</p>
 
 </section>
-<section class="slide " id="slide-17">
+<section class="slide " id="slide-21">
   <h2>Progress</h2>
   <ul>
 <li>Identified data sources for all six countries, validation and review in progress </li>
@@ -237,7 +321,7 @@ $\rho = $ density of nodes within country
 </ul>
 
 </section>
-<section class="slide " id="slide-18">
+<section class="slide " id="slide-22">
   <h2>Skills learned</h2>
   <ul>
 <li>GIT!</li>
@@ -250,7 +334,7 @@ $\rho = $ density of nodes within country
 </ul>
 
 </section>
-<section class="slide " id="slide-19">
+<section class="slide " id="slide-23">
   <h2>Acknowledgements</h2>
   
 <div style='float:left;width:48%;' class='centered'>
