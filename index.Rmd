@@ -100,7 +100,7 @@ My tasks:
 
 ---
 
-## Aproach: Commercial Farms
+## Approach: Commercial Farms
 
 >   * Distribute points based on intensive poultry production raster
 
