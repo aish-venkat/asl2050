@@ -63,12 +63,11 @@ assets      : {assets: ../../assets}
 
 Households
  * Key exposure points for humans
- * 60-80% of livestock sector in ASL countries is driven by household/backyard poultry farming
+ * 60-85% of livestock sector in ASL countries is driven by household/backyard poultry farming
  * Easy targets for interventions and incentives
 
 Commercial Farms
- * Operations of scale
- * Most impacted by HPAI outbreaks
+ * Operations of scale, most impacted by avian influenza outbreaks
  * Most ASL2050 countries aim to expand commercial poultry operations in next decade-incentive for improved biosecurity
 
 Markets
@@ -117,11 +116,12 @@ Watts, Duncan J., and Steven H. Strogatz. [Collective dynamics of 'small-world' 
 > 1. Ground Metaflu simulations in reality 
   - Country-wide poultry sector information collection
   - Spatial data processing 
-
+      - Probability surface development and spatial sampling for households and farms
+      - Assignment of 'farm size' based on extensive/intensive production rasters
 > 2. Apply Small World Network principles to Random Spatial Networks
-  - Probability surface development and spatial sampling for households and farms
-  - Assigning 'farm size' based on extensive/intensive production rasters for households and commercial farms
-
+  - Generate network representations of spatial data
+    - Define how each actor is connected to the others
+    - Parametrize network to allow for testing of intensification and connectivity
 > 3. Identify limitations of existing data, and generate models and questions to share with FAO theme leaders
 
 
@@ -155,7 +155,7 @@ Watts, Duncan J., and Steven H. Strogatz. [Collective dynamics of 'small-world' 
 
 ---
 
-## Aproach: Commercial Farms
+## Approach: Commercial Farms
 
 >   * Get number and sizes of commercial farms from literature, poultry sector reports (Ethiopia, Kenya, Uganda), or scraped from [OIE](http://www.oie.int/wahis_2/public/wahid.php/Wahidhome/Home) & [FAO EMPRES-I](http://empres-i.fao.org/eipws3g/) outbreak data
 
@@ -263,8 +263,8 @@ Lang, John, et al. [Random Spatial Networks: Small Worlds without Clustering, Tr
 ## Next Steps
 
 * Network generation for all ASL countries
-* Analysis of network modularity 
-* Local outbreak probability analysis
+* Break down network into modules for metaflu simulations 
+* Develop risk maps and outbreak probability analyses
 * Writing and publication of results 
 
 ---
